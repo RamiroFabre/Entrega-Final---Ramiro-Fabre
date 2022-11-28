@@ -12,7 +12,6 @@ from django.contrib.auth.decorators import login_required
 
 
 
-
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')	
     return render(request, 'blog/post_list.html', {'posts': posts})
@@ -83,16 +82,16 @@ def login_request(request):
     if form.is_valid():
       usuario = form.cleaned_data.get('username')
       clave = form.cleaned_data.get('password')
-      user = authenticate(username=usuario, password=clave)
+      user = authenticate(username=usuario, password=clave) 
       if user is not None:
-        login(request,user)
+        login(request,user) 
         return redirect('post_list')
       else:
         return render(request, 'blog/post_list.html', {'mensaje': 'Error, datos incorrectos'})
     else:
         return render(request, 'blog/post_list.html', {'mensaje': 'Usuario o clave incorrectos' })
   else:
-    form = AuthenticationForm()
+    form = AuthenticationForm() 
     return render(request, 'blog/login.html', {'form':form})
 
 def register (request):
@@ -102,7 +101,7 @@ def register (request):
             global username
             username=form.cleaned_data['username']   
             form.save()
-        return render (request, 'blog/post_list.html', {'mensaje': f'Usuario {username} creado correctamente'})
+        return render (request, 'blog/post_list.html', {'mensaje': 'Usuario creado correctamente'})
       
     else:
         form = UserRegistrationForm()
