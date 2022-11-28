@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h2>Mi perfil </h2>
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+      Nombre de Usuario:  {{user.username}}<br>
+      Nombre:  {{user.first_name}}<br>
+      Apellido:  {{user.last_name}}<br>
+      Email: {{user.email}}<br>
+        
+     <a href="{% url 'editarperfil' %}" button> <h5> Editar </h5>  </a>
+    </form>
+{% endblock %}
+
+

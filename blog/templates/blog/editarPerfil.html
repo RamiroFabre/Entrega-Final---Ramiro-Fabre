@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+<h3>Perfil de usuario</h3>
+
+{% block content %}
+
+<h3>Modificar Perfil de {{usuario}}</h3>
+
+<form action="{% url 'editarperfil' %}" method="POST">{% csrf_token %}
+  <table>
+    {{ formulario.as_table}}
+  </table>
+  <input type="submit" value="Guardar">
+</form>
+   
+{% endblock %}
