@@ -8,3 +8,4 @@ si nos logueamos veremos ademas un saludo personalizado con nuestro nombre de us
 Al registrarnos debermos ingresar un nombre, mail y contraseña la cual se debe confirmar.
 Al loguearse se redirige a la pagina principal y si ingresamos mal un dato se nos infromara de esto y no nos podremos loguear.
 
+link al video de muestra: https://drive.google.com/file/d/1i4fi8mwFqVePeNFA4utnaUmHcHO6e232/view?usp=share_link
