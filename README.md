@@ -1,4 +1,4 @@
-# Entrega Final-Ramiro Fabre
+# Proyecto-Ramiro Fabre
 
 Mi nombre es Ramiro Fabre y este es mi proyecto final para el curso de python de CoderHouse
 El proyecto es un blog, en la pagina principal, se pueden visualizar los posts en orden que fueron creados, y aparecen acortados acompañados de un boton "seguir leyendo", tambien se puede clickear sobre el nombre para entrar en el mismo. Estos cuentan con titulo, subtitulo, imagen, autor y hora en la que fue publicado, tambien en cada post hay una caja de comentarios. Los posts pueden ser editados y borrados por su autor el cual debe estar logueado. Desde cualquier pagina se puede volver al home clickeando el nombre del blog.
